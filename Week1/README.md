@@ -9,7 +9,8 @@ _Approach:_
 - Build function recognition for 1-degree and 2-degree polynomial
   (Input: $5x^2 + 6x + 10$ => Output: $x^2: 5$, $x: 6$, $const: 10$)
 - Using chain rule to calculate $\frac{df}{dx}$
-- Build Gradient Descent: $x^{new} = x_{old} - \eta \frac{df}{dx} |_{x = x_{old}}$
+- Build Gradient Descent
+  $$x^{new} = x_{old} - \eta \frac{df}{dx} |_{x = x_{old}}$$
 - Assign inverted Hessian to _learning_rate_
 
 _Use normal learning rate_
@@ -33,7 +34,8 @@ _Approach:_
 - Build function recognition for 1-degree and 2-degree polynomial
   (Input: $-5x^2 + 6x + 10$ => Output: $x^2: -5$, $x: 6$, $const: 10$)
 - Using chain rule to calculate $\frac{df}{dx}$
-- Build Gradient Descent: $x^{new} = x_{old} + \eta \frac{df}{dx} |_{x=x_{old}}$
+- Build Gradient Descent
+  $$x^{new} = x_{old} + \eta \frac{df}{dx}|_{x=x_{old}}$$
 - Assign inverted Hessian to _learning_rate_
 
 _Use normal learning rate_
@@ -71,4 +73,4 @@ $$\frac{df(x)}{dx} = \frac{df}{dx} + \frac{df}{dxdx}(x-x_0) = 0$$
 
 $$x = x_0 - (\frac{df}{dxdx})^{-1}\frac{df}{dx} \ (1)$$
 
-- We can see that $(1)$ is similar to _Gradient Descent_ with $ \text{learning_rate} = (\frac{df}{dxdx})^{-1}$, only use one GD-update, initial state can reach optimal point
+- We can see that $(1)$ is similar to _Gradient Descent_ and only need to use one GD-update, initial state $x_0$ can reach an optimal point
