@@ -35,3 +35,11 @@ def derivative(f, x):
         elif key == "x":
             dfdx += value
     return dfdx
+
+def invertHessian(f, x):
+    dfdxdx = 0
+    dic = regconize_formula(f)
+    for key, value in dic.items():
+        if key == "x^2":
+            dfdxdx += 2 * value
+    return 1 / dfdxdx
