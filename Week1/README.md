@@ -12,6 +12,18 @@ _Approach:_
 - Build Gradient Descent: $x^{new} = x_{old} - \eta \frac{df}{dx}|_{x=x_{old}}$
 - Assign inverted Hessian to _learning_rate_
 
+_Use normal learning rate_
+
+```
+python3 Exercise1/main.py
+```
+
+_Use inverted Hessian as learning rate_
+
+```
+python3 Exercise1/main.py --useHessian True
+```
+
 ## Exercise 2
 
 > Construct Gradient Descent algorithm to find the optimal value of the simple concave function
