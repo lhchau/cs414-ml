@@ -19,11 +19,11 @@ def regconize_formula(f: str) -> dict:
 
     for s in pattern:
         if "x^2" in s:
-            dic["x^2"] = int(s[:s.index("x")])
+            dic["x^2"] = float(s[:s.index("x")])
         elif "x" in s:
-            dic["x"] = int(s[:s.index("x")])
+            dic["x"] = float(s[:s.index("x")])
         else:
-            dic["const"] = int(s)
+            dic["const"] = float(s)
     return dic
 
 def derivative(f, x):
