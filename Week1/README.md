@@ -1,4 +1,4 @@
-# Week1 - Exercise
+# Week1 - Exercise - Gradient Descent
 
 ## Exercise 1
 
@@ -66,15 +66,15 @@ _Answer:_
 
 ## Extended question
 
-> Which is best value of learning rate for 2-degree polynomial functions ?
+> Which is the best value of learning rate for 2-degree polynomial functions ?
 
-- Consider 2-degree polynomial function, intial value of x as $f(x), x_0$
+- Consider 2-degree polynomial function, initial value of x denoted as $x_0$
 - Use _Taylor Series expansion_ to approximate $f(x)$ at 2-degree around $x_0$
 
-$$f(x) =  f(x_0) + \frac{df}{dx}(x-x_0) + \frac{1}{2} \frac{df}{dxdx}(x-x_0)^2$$
+$$f(x) =  f(x_0) + \frac{df}{dx}(x-x_0) + \frac{1}{2} \frac{d^2f}{dxdx}(x-x_0)^2$$
 
-$$\frac{df(x)}{dx} = \frac{df}{dx} + \frac{df}{dxdx}(x-x_0) = 0$$
+$$\frac{df(x)}{dx} = \frac{df}{dx} + \frac{d^2f}{dxdx}(x-x_0) = 0$$
 
-$$x = x_0 - (\frac{df}{dxdx})^{-1}\frac{df}{dx} \ (1)$$
+$$x = x_0 - (\frac{d^2f}{dxdx})^{-1}\frac{df}{dx} |_{x = x_0} \ (1)$$
 
 - We can see that $(1)$ is similar to _Gradient Descent_ and only need to use one GD-update, initial state $x_0$ can reach an optimal point
