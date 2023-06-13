@@ -21,7 +21,7 @@ $$
 _Approach:_
 
 $$
-\text{Jacobian } J = \nabla_{\theta}L = \frac{1}{n}X(\theta^TX - y)^T
+\text{Jacobian } J = \nabla_{\theta}L = \frac{1}{n}X \times (\theta^TX - y)^T
 $$
 
 $$
@@ -30,4 +30,6 @@ $$
 
 ## Exercise 2
 
-> Implement Gradient descent
+> Implement Gradient descent for general case of multiple variable linear regression in vectorized form
+
+- Check [main_multvar.ipynb](./main_mulvar.ipynb) for full code
