@@ -32,4 +32,4 @@ $$
 
 > Implement Gradient descent for general case of multiple variable linear regression in vectorized form
 
-- Check [main_multvar.ipynb](./main_mulvar.ipynb) for full code
+- Check [main_vector.ipynb](./main_vector.ipynb) for full code
